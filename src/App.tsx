@@ -49,6 +49,10 @@ const idleTopic: Topic = {
   category: 'idle',
 };
 
+export function getTopicPayloadUrl(baseUrl: string = import.meta.env.BASE_URL): string {
+  return `${baseUrl}data/topics.json`;
+}
+
 function getForcedTopicFromUrl(): string | null {
   const params = new URLSearchParams(window.location.search);
   return params.get('force') || params.get('topic') || params.get('slug');
@@ -75,7 +79,7 @@ function App() {
   const topics = useMemo(() => sortTopicsForDisplay(payload?.topics?.length ? payload.topics : fallbackTopics), [payload]);
 
   useEffect(() => {
-    fetch('/data/topics.json')
+    fetch(getTopicPayloadUrl())
       .then((response) => {
         if (!response.ok) throw new Error(`Missing topic payload (${response.status})`);
         return response.json();

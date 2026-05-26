@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from '../src/App';
+import App, { getTopicPayloadUrl } from '../src/App';
 
 const payload = {
   generatedAt: '2026-01-01T00:00:00Z',
@@ -50,6 +50,16 @@ const payload = {
 function mockFetch() {
   vi.stubGlobal('fetch', vi.fn(() => Promise.resolve({ ok: true, json: () => Promise.resolve(payload) })));
 }
+
+describe('topic payload URL', () => {
+  it('uses the Vite base path so GitHub Pages fetches the JSON from the repo subdirectory', () => {
+    expect(getTopicPayloadUrl('/copilot-cli-topic-generator/')).toBe('/copilot-cli-topic-generator/data/topics.json');
+  });
+
+  it('keeps local dev and preview payload fetches rooted at slash', () => {
+    expect(getTopicPayloadUrl('/')).toBe('/data/topics.json');
+  });
+});
 
 beforeEach(() => {
   mockFetch();
