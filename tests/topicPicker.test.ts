@@ -92,17 +92,19 @@ describe('topic picker', () => {
     expect(sequence[landingIndex - 1].displayText).not.toBe(sequence[landingIndex + 1].displayText);
   });
 
-  it('builds upward spin sequences from the previous settled command to a rerandomized landing command', () => {
-    const first = buildUpwardSpinSequence(topics, topics[1], { previousTopic: topics[0], cycles: 2, random: () => 0.10 });
-    const second = buildUpwardSpinSequence(topics, topics[1], { previousTopic: topics[1], cycles: 2, random: () => 0.70 });
+  it('builds circular upward spin sequences with varied landing positions instead of always ending at the list edge', () => {
+    const early = buildUpwardSpinSequence(topics, topics[1], { previousTopic: topics[0], cycles: 2, random: () => 0.10 });
+    const middle = buildUpwardSpinSequence(topics, topics[1], { previousTopic: topics[0], cycles: 2, random: () => 0.50 });
+    const late = buildUpwardSpinSequence(topics, topics[1], { previousTopic: topics[0], cycles: 2, random: () => 0.90 });
 
-    expect(first.startIndex).toBe(0);
-    expect(first.sequence[first.startIndex]).toBe(topics[0]);
-    expect(first.sequence[first.landingIndex]).toBe(topics[1]);
-    expect(first.landingIndex).toBeGreaterThan(first.startIndex);
-    expect(second.sequence[second.startIndex]).toBe(topics[1]);
-    expect(second.sequence[second.landingIndex]).toBe(topics[1]);
-    expect(second.sequence.slice(1, -1).map((topic) => topic.displayText)).not.toEqual(first.sequence.slice(1, -1).map((topic) => topic.displayText));
+    expect(early.startIndex).toBe(0);
+    expect(early.sequence[early.startIndex]).toBe(topics[0]);
+    expect(early.sequence[early.landingIndex]).toBe(topics[1]);
+    expect(middle.sequence[middle.landingIndex]).toBe(topics[1]);
+    expect(late.sequence[late.landingIndex]).toBe(topics[1]);
+    expect(new Set([early.landingIndex, middle.landingIndex, late.landingIndex]).size).toBeGreaterThan(1);
+    expect([early, middle, late].some((result) => result.landingIndex !== result.sequence.length - 1)).toBe(true);
+    expect(middle.sequence.slice(1, -1).map((topic) => topic.displayText)).not.toEqual(early.sequence.slice(1, -1).map((topic) => topic.displayText));
   });
 
   it('labels cheatsheet items as commands', () => {

@@ -13,9 +13,11 @@ describe('smooth reel motion timeline', () => {
       itemCount: 12,
       itemHeight: 96,
       centerOffset: 96,
+      startIndex: 11,
+      landingIndex: 0,
     });
 
-    expect(segments.length).toBe(14);
+    expect(segments.length).toBe(4);
     expect(segments[0]).toMatchObject({ index: 11, offset: 96 - 11 * 96, durationMs: 38, easing: 'linear' });
     expect(segments.at(-1)).toMatchObject({
       index: 0,
@@ -65,9 +67,20 @@ describe('smooth reel motion timeline', () => {
 
     expect(segments[0]).toMatchObject({ index: 4, offset: 96 - 4 * 96 });
     expect(segments.at(-1)).toMatchObject({ index: 9, offset: 96 - 9 * 96 });
-    for (let index = 1; index < segments.length - 2; index += 1) {
-      expect(segments[index].offset).toBeLessThanOrEqual(segments[index - 1].offset);
-    }
+    expect(segments.slice(0, -2).map((segment) => segment.index)).toEqual([4, 5, 6, 7, 8, 9]);
+  });
+
+  it('wraps around the circular reel instead of reversing direction when the target is before the start', () => {
+    const segments = buildSmoothSpinTimeline({
+      itemCount: 6,
+      itemHeight: 96,
+      centerOffset: 96,
+      startIndex: 4,
+      landingIndex: 2,
+    });
+
+    expect(segments.slice(0, -2).map((segment) => segment.index)).toEqual([4, 5, 0, 1, 2]);
+    expect(segments.at(-1)).toMatchObject({ index: 2, offset: 96 - 2 * 96 });
   });
 
   it('can settle on early, middle, or late positions in the reel', () => {

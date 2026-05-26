@@ -25,6 +25,18 @@ function easeOutCubic(value: number): number {
   return 1 - Math.pow(1 - value, 3);
 }
 
+function timelineIndexes(startIndex: number, targetIndex: number, lastIndex: number): number[] {
+  const indexes = [startIndex];
+  let index = startIndex;
+
+  do {
+    index = (index + 1) % (lastIndex + 1);
+    indexes.push(index);
+  } while (index !== targetIndex);
+
+  return indexes;
+}
+
 export function buildSmoothSpinTimeline({ itemCount, itemHeight, centerOffset, landingIndex = 0, startIndex }: SmoothSpinTimelineOptions): ReelMotionSegment[] {
   if (itemCount <= 0) return [];
   if (itemCount === 1) {
@@ -36,18 +48,17 @@ export function buildSmoothSpinTimeline({ itemCount, itemHeight, centerOffset, l
   const resolvedStartIndex = startIndex === undefined
     ? (targetIndex === lastIndex ? 0 : lastIndex)
     : Math.max(0, Math.min(lastIndex, startIndex));
-  const direction = targetIndex >= resolvedStartIndex ? 1 : -1;
-  const steps = Math.abs(resolvedStartIndex - targetIndex);
+  const indexes = timelineIndexes(resolvedStartIndex, targetIndex, lastIndex);
+  const steps = indexes.length - 1;
   const targetOffset = centerOffset - targetIndex * itemHeight;
   const overshootOffset = targetOffset + itemHeight * OVERSHOOT_RATIO;
 
-  const approachSegments = Array.from({ length: steps + 1 }, (_, step): ReelMotionSegment => {
+  const approachSegments = indexes.map((index, step): ReelMotionSegment => {
     const progress = steps === 0 ? 1 : step / steps;
     const decelerationProgress = Math.max(0, (progress - DECELERATION_START) / (1 - DECELERATION_START));
     const easedDeceleration = easeOutCubic(decelerationProgress);
     const durationMs = Math.round(FAST_STEP_MS + easedDeceleration * (SLOWDOWN_STEP_MS - FAST_STEP_MS));
     const isFinalApproach = step === steps;
-    const index = resolvedStartIndex + step * direction;
 
     return {
       index,

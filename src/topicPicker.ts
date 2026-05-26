@@ -182,10 +182,7 @@ export type UpwardSpinSequenceResult = SpinSequenceResult & {
 
 export function buildUpwardSpinSequence(topics: Topic[], finalTopic: Topic, options: UpwardSpinSequenceOptions = {}): UpwardSpinSequenceResult {
   const { previousTopic, ...spinOptions } = options;
-  const { sequence, landingIndex } = buildRandomizedSpinSequence(topics, finalTopic, {
-    ...spinOptions,
-    landingPosition: 'end',
-  });
+  const { sequence, landingIndex } = buildRandomizedSpinSequence(topics, finalTopic, spinOptions);
   const withPreviousStart = previousTopic ? [previousTopic, ...sequence] : sequence;
 
   return {
