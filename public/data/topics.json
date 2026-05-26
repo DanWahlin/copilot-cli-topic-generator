@@ -1,0 +1,2564 @@
+{
+  "generatedAt": "2026-05-22T06:56:02.189504Z",
+  "sourceUrl": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+  "sourceUrls": {
+    "primary": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+    "officialDocs": "https://raw.githubusercontent.com/github/docs/main/content/copilot/reference/copilot-cli-reference/cli-command-reference.md"
+  },
+  "topicCount": 63,
+  "types": [
+    "command"
+  ],
+  "topics": [
+    {
+      "id": "topic_4a0c0360809e",
+      "slug": "command-agent-60809e",
+      "type": "command",
+      "title": "/agent",
+      "displayText": "/agent",
+      "synopsis": "Use /agent to browse and select from available agents (if any).",
+      "details": "Browse and select from available agents (if any).",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "agents",
+      "chapter": "agents",
+      "examples": [
+        "/agent  # open the interactive agent picker"
+      ],
+      "keywords": [
+        "agent",
+        "agents",
+        "and",
+        "any",
+        "available",
+        "browse",
+        "from",
+        "select"
+      ],
+      "syntax": "/agent",
+      "category": "agents",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Browse and select from available agents (if any).",
+      "official_aliases": [
+        "/agent"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-custom-agents"
+    },
+    {
+      "id": "topic_4a4fac98d49d",
+      "slug": "command-chronicle-98d49d",
+      "type": "command",
+      "title": "/chronicle",
+      "displayText": "/chronicle",
+      "synopsis": "Use /chronicle for session history tools and insights.",
+      "details": "Syntax: /chronicle <standup|tips|improve|reindex> Session history tools and insights.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "agents",
+      "chapter": "agents",
+      "examples": [
+        "/chronicle standup  # generate a standup report from recent sessions",
+        "/chronicle tips  # get workflow tips based on your usage patterns",
+        "/chronicle improve  # suggestions to work more effectively with Copilot"
+      ],
+      "keywords": [
+        "agents",
+        "and",
+        "chronicle",
+        "history",
+        "improve",
+        "insights.",
+        "reindex",
+        "session",
+        "standup",
+        "tips",
+        "tools"
+      ],
+      "syntax": "/chronicle <standup|tips|improve|reindex>",
+      "category": "agents",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Session history tools and insights.",
+      "official_aliases": [
+        "/chronicle"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_a64701fdaf27",
+      "slug": "command-delegate-fdaf27",
+      "type": "command",
+      "title": "/delegate",
+      "displayText": "/delegate",
+      "synopsis": "Use /delegate to delegate work to Copilot coding agent and create an AI-generated pull request.",
+      "details": "Syntax: /delegate [PROMPT] Delegate changes to a remote repository with an AI-generated pull request.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "agents",
+      "chapter": "agents",
+      "examples": [
+        "/delegate add input validation to the registration form",
+        "/delegate write unit tests for the payment service"
+      ],
+      "keywords": [
+        "agents",
+        "ai-generated",
+        "changes",
+        "delegate",
+        "prompt",
+        "pull",
+        "remote",
+        "repository",
+        "request.",
+        "with"
+      ],
+      "syntax": "/delegate [PROMPT]",
+      "category": "agents",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Delegate changes to a remote repository with an AI-generated pull request.",
+      "official_aliases": [
+        "/delegate"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/delegate-tasks-to-cca"
+    },
+    {
+      "id": "topic_02b1022456e1",
+      "slug": "command-fleet-2456e1",
+      "type": "command",
+      "title": "/fleet",
+      "displayText": "/fleet",
+      "synopsis": "Use /fleet to enable parallel subagent execution of parts of a task.",
+      "details": "Syntax: /fleet [PROMPT] Enable parallel subagent execution of parts of a task.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "agents",
+      "chapter": "agents",
+      "examples": [
+        "/fleet run all test suites in parallel",
+        "/fleet analyze all files in src/ for security issues simultaneously"
+      ],
+      "keywords": [
+        "agents",
+        "enable",
+        "execution",
+        "fleet",
+        "parallel",
+        "parts",
+        "prompt",
+        "subagent",
+        "task."
+      ],
+      "syntax": "/fleet [PROMPT]",
+      "category": "agents",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Enable parallel subagent execution of parts of a task.",
+      "official_aliases": [
+        "/fleet"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/fleet"
+    },
+    {
+      "id": "topic_3c2bf9d0e5ba",
+      "slug": "command-ide-d0e5ba",
+      "type": "command",
+      "title": "/ide",
+      "displayText": "/ide",
+      "synopsis": "Use /ide to connect to an IDE workspace.",
+      "details": "Connect to an IDE workspace.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "agents",
+      "chapter": "agents",
+      "examples": [
+        "/ide  # connect to the IDE workspace from an active session"
+      ],
+      "keywords": [
+        "agents",
+        "connect",
+        "ide",
+        "workspace."
+      ],
+      "syntax": "/ide",
+      "category": "agents",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Connect to an IDE workspace.",
+      "official_aliases": [
+        "/ide"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/connecting-vs-code#managing-the-connection-with-the-ide-slash-command"
+    },
+    {
+      "id": "topic_a5e435e335b9",
+      "slug": "command-research-e335b9",
+      "type": "command",
+      "title": "/research",
+      "displayText": "/research",
+      "synopsis": "Use /research to run a deep research investigation using GitHub search and web sources.",
+      "details": "Syntax: /research TOPIC Run a deep research investigation using GitHub search and web sources.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "agents",
+      "chapter": "agents",
+      "examples": [
+        "/research best practices for JWT refresh token rotation",
+        "/research how does the GitHub Actions cache action work?"
+      ],
+      "keywords": [
+        "agents",
+        "and",
+        "deep",
+        "github",
+        "investigation",
+        "research",
+        "run",
+        "search",
+        "sources.",
+        "topic",
+        "using",
+        "web"
+      ],
+      "syntax": "/research TOPIC",
+      "category": "agents",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Run a deep research investigation using GitHub search and web sources.",
+      "official_aliases": [
+        "/research"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/research"
+    },
+    {
+      "id": "topic_04af55c5ecf4",
+      "slug": "command-sidekicks-c5ecf4",
+      "type": "command",
+      "title": "/sidekicks",
+      "displayText": "/sidekicks",
+      "synopsis": "Use /sidekicks when you need the sidekicks command from the agents area of Copilot CLI.",
+      "details": "Syntax: /sidekicks [list|add|remove|info] [NAME]",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "agents",
+      "chapter": "agents",
+      "examples": [
+        "/sidekicks list  # show all available sidekicks",
+        "/sidekicks add linter  # activate the linter sidekick",
+        "/sidekicks info linter  # show details about a specific sidekick"
+      ],
+      "keywords": [
+        "add",
+        "agents",
+        "info",
+        "list",
+        "name",
+        "remove",
+        "sidekicks"
+      ],
+      "syntax": "/sidekicks [list|add|remove|info] [NAME]",
+      "category": "agents",
+      "note": "",
+      "source_kind": "cheatsheet",
+      "sources": [
+        "cheatsheet"
+      ],
+      "official_purpose": "",
+      "official_aliases": [],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_d8b2b66d60fa",
+      "slug": "command-tasks-6d60fa",
+      "type": "command",
+      "title": "/tasks",
+      "displayText": "/tasks",
+      "synopsis": "Use /tasks to view and manage tasks (subagents and shell commands).",
+      "details": "View and manage tasks (subagents and shell commands).",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "agents",
+      "chapter": "agents",
+      "examples": [
+        "/tasks  # list all active subagents and background shell commands"
+      ],
+      "keywords": [
+        "agents",
+        "and",
+        "commands",
+        "manage",
+        "shell",
+        "subagents",
+        "tasks",
+        "view"
+      ],
+      "syntax": "/tasks",
+      "category": "agents",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "View and manage tasks (subagents and shell commands).",
+      "official_aliases": [
+        "/tasks"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_1b90242303d7",
+      "slug": "command-login-2303d7",
+      "type": "command",
+      "title": "/login",
+      "displayText": "/login",
+      "synopsis": "Use /login to log in to Copilot.",
+      "details": "Log in to Copilot.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "authentication",
+      "chapter": "authentication",
+      "examples": [
+        "/login  # start OAuth flow inside the session"
+      ],
+      "keywords": [
+        "authentication",
+        "copilot.",
+        "log",
+        "login"
+      ],
+      "syntax": "/login",
+      "category": "authentication",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Log in to Copilot.",
+      "official_aliases": [
+        "/login"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_b5f6e68f6048",
+      "slug": "command-logout-8f6048",
+      "type": "command",
+      "title": "/logout",
+      "displayText": "/logout",
+      "synopsis": "Use /logout to log out of Copilot.",
+      "details": "Log out of Copilot.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "authentication",
+      "chapter": "authentication",
+      "examples": [
+        "/logout  # clear credentials from the current session"
+      ],
+      "keywords": [
+        "authentication",
+        "copilot.",
+        "log",
+        "logout",
+        "out"
+      ],
+      "syntax": "/logout",
+      "category": "authentication",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Log out of Copilot.",
+      "official_aliases": [
+        "/logout"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_4630ca5ec8df",
+      "slug": "command-user-5ec8df",
+      "type": "command",
+      "title": "/user",
+      "displayText": "/user",
+      "synopsis": "Use /user to manage the current GitHub user.",
+      "details": "Syntax: /user [show|list|switch] Manage the current GitHub user.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "authentication",
+      "chapter": "authentication",
+      "examples": [
+        "/user show  # display the currently active GitHub account",
+        "/user list  # list all authenticated accounts",
+        "/user switch  # interactively switch to a different account"
+      ],
+      "keywords": [
+        "authentication",
+        "current",
+        "github",
+        "list",
+        "manage",
+        "show",
+        "switch",
+        "the",
+        "user",
+        "user."
+      ],
+      "syntax": "/user [show|list|switch]",
+      "category": "authentication",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Manage the current GitHub user.",
+      "official_aliases": [
+        "/user"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_a70a3d447f79",
+      "slug": "command-ask-447f79",
+      "type": "command",
+      "title": "/ask",
+      "displayText": "/ask",
+      "synopsis": "Use /ask to ask a quick side question without adding to the conversation history.",
+      "details": "Syntax: /ask QUESTION Ask a quick side question without adding to the conversation history.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "chat",
+      "chapter": "chat",
+      "examples": [
+        "/ask what does --no-ff mean in git merge?",
+        "/ask what is the difference between CMD and ENTRYPOINT in Docker?"
+      ],
+      "keywords": [
+        "adding",
+        "ask",
+        "chat",
+        "conversation",
+        "history.",
+        "question",
+        "quick",
+        "side",
+        "the",
+        "without"
+      ],
+      "syntax": "/ask QUESTION",
+      "category": "chat",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Ask a quick side question without adding to the conversation history.",
+      "official_aliases": [
+        "/ask"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_d035a4d345d8",
+      "slug": "command-clear-d345d8",
+      "type": "command",
+      "title": "/clear",
+      "displayText": "/clear",
+      "synopsis": "Use /clear to start a new conversation.",
+      "details": "Syntax: /clear [PROMPT], /new [PROMPT], /reset [PROMPT] Start a new conversation.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "chat",
+      "chapter": "chat",
+      "examples": [
+        "/clear  # wipe history and start fresh",
+        "/new  # alias for /clear",
+        "/reset \"help me refactor the auth module\"  # clear and immediately prompt"
+      ],
+      "keywords": [
+        "chat",
+        "clear",
+        "conversation.",
+        "new",
+        "prompt",
+        "reset",
+        "start"
+      ],
+      "syntax": "/clear [PROMPT], /new [PROMPT], /reset [PROMPT]",
+      "category": "chat",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Start a new conversation.",
+      "official_aliases": [
+        "/clear",
+        "/new",
+        "/reset"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_a079a9fff37d",
+      "slug": "command-copy-fff37d",
+      "type": "command",
+      "title": "/copy",
+      "displayText": "/copy",
+      "synopsis": "Use /copy to copy the last response to the clipboard.",
+      "details": "Copy the last response to the clipboard.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "chat",
+      "chapter": "chat",
+      "examples": [
+        "/copy  # copies the most recent response to clipboard"
+      ],
+      "keywords": [
+        "chat",
+        "clipboard.",
+        "copy",
+        "last",
+        "response",
+        "the"
+      ],
+      "syntax": "/copy",
+      "category": "chat",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Copy the last response to the clipboard.",
+      "official_aliases": [
+        "/copy"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_e83f6c64adea",
+      "slug": "command-new-64adea",
+      "type": "command",
+      "title": "/new",
+      "displayText": "/new",
+      "synopsis": "Use /new to start a new conversation.",
+      "details": "Syntax: /clear [PROMPT], /new [PROMPT], /reset [PROMPT] Start a new conversation.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "chat",
+      "chapter": "chat",
+      "examples": [
+        "/new  # clear history and start fresh",
+        "/new help me refactor the auth module  # clear and immediately prompt",
+        "/clear  # alias for /new"
+      ],
+      "keywords": [
+        "chat",
+        "clear",
+        "conversation.",
+        "new",
+        "prompt",
+        "reset",
+        "start"
+      ],
+      "syntax": "/clear [PROMPT], /new [PROMPT], /reset [PROMPT]",
+      "category": "chat",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Start a new conversation.",
+      "official_aliases": [
+        "/clear",
+        "/new",
+        "/reset"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_f4fd7849d9a9",
+      "slug": "command-search-49d9a9",
+      "type": "command",
+      "title": "/search",
+      "displayText": "/search",
+      "synopsis": "Use /search for search the conversation timeline.",
+      "details": "Syntax: /search [QUERY], /find [QUERY] Search the conversation timeline.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "chat",
+      "chapter": "chat",
+      "examples": [
+        "/search authentication  # find messages mentioning authentication",
+        "/find JWT  # alias for /search"
+      ],
+      "keywords": [
+        "chat",
+        "conversation",
+        "find",
+        "query",
+        "search",
+        "the",
+        "timeline."
+      ],
+      "syntax": "/search [QUERY], /find [QUERY]",
+      "category": "chat",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Search the conversation timeline.",
+      "official_aliases": [
+        "/search",
+        "/find"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_31616a07c6d9",
+      "slug": "command-undo-07c6d9",
+      "type": "command",
+      "title": "/undo",
+      "displayText": "/undo",
+      "synopsis": "Use /undo for rewind the last turn and revert file changes.",
+      "details": "Syntax: /undo, /rewind Rewind the last turn and revert file changes.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "chat",
+      "chapter": "chat",
+      "examples": [
+        "/undo  # revert the last turn and its file changes",
+        "/rewind  # alias for /undo"
+      ],
+      "keywords": [
+        "and",
+        "changes.",
+        "chat",
+        "file",
+        "last",
+        "revert",
+        "rewind",
+        "the",
+        "turn",
+        "undo"
+      ],
+      "syntax": "/undo, /rewind",
+      "category": "chat",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Rewind the last turn and revert file changes.",
+      "official_aliases": [
+        "/undo",
+        "/rewind"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_7a346245290d",
+      "slug": "command-diff-45290d",
+      "type": "command",
+      "title": "/diff",
+      "displayText": "/diff",
+      "synopsis": "Use /diff to review the changes made in the current directory.",
+      "details": "Review the changes made in the current directory.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "code",
+      "chapter": "code",
+      "examples": [
+        "/diff  # review and explain changes in the working directory"
+      ],
+      "keywords": [
+        "changes",
+        "code",
+        "current",
+        "diff",
+        "directory.",
+        "made",
+        "review",
+        "the"
+      ],
+      "syntax": "/diff",
+      "category": "code",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Review the changes made in the current directory.",
+      "official_aliases": [
+        "/diff"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_3a75666df0ba",
+      "slug": "command-plan-6df0ba",
+      "type": "command",
+      "title": "/plan",
+      "displayText": "/plan",
+      "synopsis": "Use /plan to create an implementation plan before coding.",
+      "details": "Syntax: /plan [PROMPT] Create an implementation plan before coding.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "code",
+      "chapter": "code",
+      "examples": [
+        "/plan add pagination to the users API endpoint",
+        "/plan refactor the authentication module to use JWT"
+      ],
+      "keywords": [
+        "before",
+        "code",
+        "coding.",
+        "create",
+        "implementation",
+        "plan",
+        "prompt"
+      ],
+      "syntax": "/plan [PROMPT]",
+      "category": "code",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Create an implementation plan before coding.",
+      "official_aliases": [
+        "/plan"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_ce9c8d5f3ba3",
+      "slug": "command-pr-5f3ba3",
+      "type": "command",
+      "title": "/pr",
+      "displayText": "/pr",
+      "synopsis": "Use /pr to manage pull requests for the current branch.",
+      "details": "Syntax: /pr [view|create|fix|auto] Manage pull requests for the current branch.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "code",
+      "chapter": "code",
+      "examples": [
+        "/pr view  # show the open PR for the current branch",
+        "/pr create  # create a PR with an AI-generated description",
+        "/pr fix  # let Copilot automatically address review comments",
+        "/pr auto  # create PR and fix review comments automatically"
+      ],
+      "keywords": [
+        "auto",
+        "branch.",
+        "code",
+        "create",
+        "current",
+        "fix",
+        "for",
+        "manage",
+        "pull",
+        "requests",
+        "the",
+        "view"
+      ],
+      "syntax": "/pr [view|create|fix|auto]",
+      "category": "code",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Manage pull requests for the current branch.",
+      "official_aliases": [
+        "/pr"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/manage-pull-requests"
+    },
+    {
+      "id": "topic_eec91b67d8f7",
+      "slug": "command-review-67d8f7",
+      "type": "command",
+      "title": "/review",
+      "displayText": "/review",
+      "synopsis": "Use /review to run the code review agent to analyze changes.",
+      "details": "Syntax: /review [PROMPT] Run the code review agent to analyze changes.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "code",
+      "chapter": "code",
+      "examples": [
+        "/review  # analyze the current working directory diff",
+        "/review focus on security issues only"
+      ],
+      "keywords": [
+        "agent",
+        "analyze",
+        "changes.",
+        "code",
+        "prompt",
+        "review",
+        "run",
+        "the"
+      ],
+      "syntax": "/review [PROMPT]",
+      "category": "code",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Run the code review agent to analyze changes.",
+      "official_aliases": [
+        "/review"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/agentic-code-review"
+    },
+    {
+      "id": "topic_a8a36bad0001",
+      "slug": "command-add-dir-ad0001",
+      "type": "command",
+      "title": "/add-dir",
+      "displayText": "/add-dir",
+      "synopsis": "Use /add-dir to add a directory to the allowed list for file access.",
+      "details": "Syntax: /add-dir PATH Add a directory to the allowed list for file access.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/add-dir ./src  # allow Copilot read/write access in src/",
+        "/add-dir /tmp/scratch  # allow a scratch directory",
+        "/list-dirs  # see all currently allowed directories"
+      ],
+      "keywords": [
+        "access.",
+        "add",
+        "add-dir",
+        "allowed",
+        "configuration",
+        "directory",
+        "file",
+        "for",
+        "list",
+        "path",
+        "the"
+      ],
+      "syntax": "/add-dir PATH",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Add a directory to the allowed list for file access.",
+      "official_aliases": [
+        "/add-dir"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_617edafa7c6a",
+      "slug": "command-allow-all-fa7c6a",
+      "type": "command",
+      "title": "/allow-all",
+      "displayText": "/allow-all",
+      "synopsis": "Use /allow-all to enable all permissions (tools, paths, and URLs).",
+      "details": "Syntax: /allow-all [on|off|show], /yolo [on|off|show] Enable all permissions (tools, paths, and URLs).",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/allow-all on  # enable all permissions for this session",
+        "/allow-all show  # check current permission status",
+        "/yolo  # alias for /allow-all on"
+      ],
+      "keywords": [
+        "all",
+        "allow-all",
+        "and",
+        "configuration",
+        "enable",
+        "off",
+        "paths",
+        "permissions",
+        "show",
+        "tools",
+        "urls",
+        "yolo"
+      ],
+      "syntax": "/allow-all [on|off|show], /yolo [on|off|show]",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Enable all permissions (tools, paths, and URLs).",
+      "official_aliases": [
+        "/allow-all",
+        "/yolo"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_6687c12ddda6",
+      "slug": "command-cd-2ddda6",
+      "type": "command",
+      "title": "/cd",
+      "displayText": "/cd",
+      "synopsis": "Use /cd to change the working directory or show where you are.",
+      "details": "Syntax: /cwd, /cd [PATH] Change the working directory or display the current directory.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/cd ~/projects/my-app  # change to a specific directory",
+        "/cd ..  # go up one directory level",
+        "/cd  # display the current working directory"
+      ],
+      "keywords": [
+        "change",
+        "configuration",
+        "current",
+        "cwd",
+        "directory",
+        "directory.",
+        "display",
+        "path",
+        "the",
+        "working"
+      ],
+      "syntax": "/cwd, /cd [PATH]",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Change the working directory or display the current directory.",
+      "official_aliases": [
+        "/cwd",
+        "/cd"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_9e198a4075ec",
+      "slug": "command-cwd-4075ec",
+      "type": "command",
+      "title": "/cwd",
+      "displayText": "/cwd",
+      "synopsis": "Use /cwd to change the working directory or show where you are.",
+      "details": "Syntax: /cwd, /cd [PATH] Change the working directory or display the current directory.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/cwd  # show the current working directory",
+        "/cwd ~/projects/my-app  # change to a specific directory"
+      ],
+      "keywords": [
+        "change",
+        "configuration",
+        "current",
+        "cwd",
+        "directory",
+        "directory.",
+        "display",
+        "path",
+        "the",
+        "working"
+      ],
+      "syntax": "/cwd, /cd [PATH]",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Change the working directory or display the current directory.",
+      "official_aliases": [
+        "/cwd",
+        "/cd"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_ae8e37334ddf",
+      "slug": "command-env-334ddf",
+      "type": "command",
+      "title": "/env",
+      "displayText": "/env",
+      "synopsis": "Use /env to show loaded environment details (instructions, MCP servers, skills, agents, plugins, LSPs, extensions).",
+      "details": "Show loaded environment details (instructions, MCP servers, skills, agents, plugins, LSPs, extensions).",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/env  # inspect the full Copilot runtime environment"
+      ],
+      "keywords": [
+        "agents",
+        "configuration",
+        "details",
+        "env",
+        "environment",
+        "extensions",
+        "instructions",
+        "loaded",
+        "lsps",
+        "mcp",
+        "plugins",
+        "servers",
+        "show",
+        "skills"
+      ],
+      "syntax": "/env",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Show loaded environment details (instructions, MCP servers, skills, agents, plugins, LSPs, extensions).",
+      "official_aliases": [
+        "/env"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_53b182e5f359",
+      "slug": "command-keep-alive-e5f359",
+      "type": "command",
+      "title": "/keep-alive",
+      "displayText": "/keep-alive",
+      "synopsis": "Use /keep-alive to prevent the machine from going to sleep: while a CLI session is active, while the agent is busy, or for a defined length of time. Accepts durations like 30, 30m, 2h, 1d (bare numbers default to minutes).",
+      "details": "Syntax: /keep-alive [on|off|busy|DURATION], /caffeinate [on|off|busy|DURATION] Prevent the machine from going to sleep: while a CLI session is active, while the agent is busy, or for a defined length of time. Accepts durations like 30, 30m, 2h, 1d (bare numbers default to minutes).",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/keep-alive on  # prevent sleep for the whole session",
+        "/keep-alive busy  # only prevent sleep while the agent is running",
+        "/keep-alive 2h  # prevent sleep for two hours",
+        "/caffeinate  # alias for /keep-alive on"
+      ],
+      "keywords": [
+        "accepts",
+        "active",
+        "agent",
+        "bare",
+        "busy",
+        "caffeinate",
+        "cli",
+        "configuration",
+        "default",
+        "defined",
+        "duration",
+        "durations",
+        "for",
+        "from",
+        "going",
+        "keep-alive",
+        "length",
+        "like"
+      ],
+      "syntax": "/keep-alive [on|off|busy|DURATION], /caffeinate [on|off|busy|DURATION]",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Prevent the machine from going to sleep: while a CLI session is active, while the agent is busy, or for a defined length of time. Accepts durations like 30, 30m, 2h, 1d (bare numbers default to minutes).",
+      "official_aliases": [
+        "/keep-alive",
+        "/caffeinate"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_e1bcf788c237",
+      "slug": "command-list-dirs-88c237",
+      "type": "command",
+      "title": "/list-dirs",
+      "displayText": "/list-dirs",
+      "synopsis": "Use /list-dirs to display all of the directories for which file access has been allowed.",
+      "details": "Display all of the directories for which file access has been allowed.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/list-dirs  # show all allowed directories",
+        "/add-dir ./src  # add a directory to the list"
+      ],
+      "keywords": [
+        "access",
+        "all",
+        "allowed.",
+        "been",
+        "configuration",
+        "directories",
+        "display",
+        "file",
+        "for",
+        "has",
+        "list-dirs",
+        "the",
+        "which"
+      ],
+      "syntax": "/list-dirs",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Display all of the directories for which file access has been allowed.",
+      "official_aliases": [
+        "/list-dirs"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_98ec5a17543b",
+      "slug": "command-reset-allowed-tools-17543b",
+      "type": "command",
+      "title": "/reset-allowed-tools",
+      "displayText": "/reset-allowed-tools",
+      "synopsis": "Use /reset-allowed-tools to reset the list of allowed tools.",
+      "details": "Reset the list of allowed tools.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/reset-allowed-tools  # revoke all approved tools and permissions"
+      ],
+      "keywords": [
+        "allowed",
+        "configuration",
+        "list",
+        "reset",
+        "reset-allowed-tools",
+        "the",
+        "tools."
+      ],
+      "syntax": "/reset-allowed-tools",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Reset the list of allowed tools.",
+      "official_aliases": [
+        "/reset-allowed-tools"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_1f5bc7da6c82",
+      "slug": "command-statusline-da6c82",
+      "type": "command",
+      "title": "/statusline",
+      "displayText": "/statusline",
+      "synopsis": "Use /statusline to configure which items appear in the status line.",
+      "details": "Syntax: /statusline, /footer Configure which items appear in the status line.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/statusline  # open the status line configuration menu",
+        "/footer  # alias for /statusline"
+      ],
+      "keywords": [
+        "appear",
+        "configuration",
+        "configure",
+        "footer",
+        "items",
+        "line.",
+        "status",
+        "statusline",
+        "the",
+        "which"
+      ],
+      "syntax": "/statusline, /footer",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Configure which items appear in the status line.",
+      "official_aliases": [
+        "/statusline",
+        "/footer"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_6e5268f2aca0",
+      "slug": "command-streamer-mode-f2aca0",
+      "type": "command",
+      "title": "/streamer-mode",
+      "displayText": "/streamer-mode",
+      "synopsis": "Use /streamer-mode when you need the streamer mode command from the configuration area of Copilot CLI.",
+      "details": "Syntax: /streamer-mode [on|off]",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/streamer-mode on  # hide sensitive values in output",
+        "/streamer-mode off  # disable redaction",
+        "/streamer-mode  # check current status"
+      ],
+      "keywords": [
+        "configuration",
+        "off",
+        "streamer-mode"
+      ],
+      "syntax": "/streamer-mode [on|off]",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet",
+      "sources": [
+        "cheatsheet"
+      ],
+      "official_purpose": "",
+      "official_aliases": [],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_bb943c183a91",
+      "slug": "command-terminal-setup-183a91",
+      "type": "command",
+      "title": "/terminal-setup",
+      "displayText": "/terminal-setup",
+      "synopsis": "Use /terminal-setup to configure the terminal for multiline input support (<kbd>Shift</kbd>+<kbd>Enter</kbd> and <kbd>Ctrl</kbd>+<kbd>Enter</kbd>).",
+      "details": "Configure the terminal for multiline input support (<kbd>Shift</kbd>+<kbd>Enter</kbd> and <kbd>Ctrl</kbd>+<kbd>Enter</kbd>).",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/terminal-setup  # launch the interactive setup wizard"
+      ],
+      "keywords": [
+        "and",
+        "configuration",
+        "configure",
+        "ctrl",
+        "enter",
+        "for",
+        "input",
+        "kbd",
+        "multiline",
+        "shift",
+        "support",
+        "terminal",
+        "terminal-setup",
+        "the"
+      ],
+      "syntax": "/terminal-setup",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Configure the terminal for multiline input support (<kbd>Shift</kbd>+<kbd>Enter</kbd> and <kbd>Ctrl</kbd>+<kbd>Enter</kbd>).",
+      "official_aliases": [
+        "/terminal-setup"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_6d22004869e6",
+      "slug": "command-voice-4869e6",
+      "type": "command",
+      "title": "/voice",
+      "displayText": "/voice",
+      "synopsis": "Use /voice when you need the voice command from the configuration area of Copilot CLI.",
+      "details": "Syntax: /voice [on|off]",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "configuration",
+      "chapter": "configuration",
+      "examples": [
+        "/voice on  # enable microphone input",
+        "/voice off  # switch back to keyboard input",
+        "/voice  # check current voice input status"
+      ],
+      "keywords": [
+        "configuration",
+        "off",
+        "voice"
+      ],
+      "syntax": "/voice [on|off]",
+      "category": "configuration",
+      "note": "",
+      "source_kind": "cheatsheet",
+      "sources": [
+        "cheatsheet"
+      ],
+      "official_purpose": "",
+      "official_aliases": [],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_5c569266da2a",
+      "slug": "command-bug-66da2a",
+      "type": "command",
+      "title": "/bug",
+      "displayText": "/bug",
+      "synopsis": "Use /bug to provide feedback about Copilot CLI.",
+      "details": "Syntax: /feedback, /bug Provide feedback about the CLI.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "getting-started",
+      "chapter": "getting-started",
+      "examples": [
+        "/bug  # open the bug report flow"
+      ],
+      "keywords": [
+        "about",
+        "bug",
+        "cli.",
+        "feedback",
+        "getting-started",
+        "provide",
+        "the"
+      ],
+      "syntax": "/feedback, /bug",
+      "category": "getting-started",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Provide feedback about the CLI.",
+      "official_aliases": [
+        "/feedback",
+        "/bug"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_1e71046b1e8a",
+      "slug": "command-changelog-6b1e8a",
+      "type": "command",
+      "title": "/changelog",
+      "displayText": "/changelog",
+      "synopsis": "Use /changelog to display Copilot CLI changelog. Optionally specify a version, a count of recent releases, or a starting version. Add the keyword summarize for an AI-generated summary.",
+      "details": "Syntax: /changelog [summarize] [VERSION|last N|since VERSION], /release-notes [summarize] [VERSION|last N|since VERSION] Display the CLI changelog. Optionally specify a version, a count of recent releases, or a starting version. Add the keyword summarize for an AI-generated summary.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "getting-started",
+      "chapter": "getting-started",
+      "examples": [
+        "/changelog  # show recent release notes",
+        "/changelog last 3  # show the last 3 releases",
+        "/changelog summarize  # AI-generated summary of recent changes",
+        "/release-notes  # alias for /changelog"
+      ],
+      "keywords": [
+        "add",
+        "ai-generated",
+        "changelog",
+        "changelog.",
+        "cli",
+        "count",
+        "display",
+        "for",
+        "getting-started",
+        "keyword",
+        "last",
+        "optionally",
+        "recent",
+        "release-notes",
+        "releases",
+        "since",
+        "specify",
+        "starting"
+      ],
+      "syntax": "/changelog [summarize] [VERSION|last N|since VERSION], /release-notes [summarize] [VERSION|last N|since VERSION]",
+      "category": "getting-started",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Display the CLI changelog. Optionally specify a version, a count of recent releases, or a starting version. Add the keyword summarize for an AI-generated summary.",
+      "official_aliases": [
+        "/changelog",
+        "/release-notes"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_a5c86e2c31ed",
+      "slug": "command-feedback-2c31ed",
+      "type": "command",
+      "title": "/feedback",
+      "displayText": "/feedback",
+      "synopsis": "Use /feedback to provide feedback about Copilot CLI.",
+      "details": "Syntax: /feedback, /bug Provide feedback about the CLI.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "getting-started",
+      "chapter": "getting-started",
+      "examples": [
+        "/feedback  # open the feedback flow"
+      ],
+      "keywords": [
+        "about",
+        "bug",
+        "cli.",
+        "feedback",
+        "getting-started",
+        "provide",
+        "the"
+      ],
+      "syntax": "/feedback, /bug",
+      "category": "getting-started",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Provide feedback about the CLI.",
+      "official_aliases": [
+        "/feedback",
+        "/bug"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_eeb9340e9a99",
+      "slug": "command-help-0e9a99",
+      "type": "command",
+      "title": "/help",
+      "displayText": "/help",
+      "synopsis": "Use /help to show help for interactive commands.",
+      "details": "Show the help for interactive commands.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "getting-started",
+      "chapter": "getting-started",
+      "examples": [
+        "/help  # list all slash commands"
+      ],
+      "keywords": [
+        "commands.",
+        "for",
+        "getting-started",
+        "help",
+        "interactive",
+        "show",
+        "the"
+      ],
+      "syntax": "/help",
+      "category": "getting-started",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Show the help for interactive commands.",
+      "official_aliases": [
+        "/help"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_b910b28c958b",
+      "slug": "command-init-8c958b",
+      "type": "command",
+      "title": "/init",
+      "displayText": "/init",
+      "synopsis": "Use /init to initialize Copilot custom instructions and agentic features for this repository. See Project initialization for Copilot (#project-initialization-for-copilot).",
+      "details": "Initialize Copilot custom instructions and agentic features for this repository. See Project initialization for Copilot (#project-initialization-for-copilot).",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "getting-started",
+      "chapter": "getting-started",
+      "examples": [
+        "/init  # analyze repo and write .github/copilot-instructions.md",
+        "/init suppress  # hide the startup warning without creating the file"
+      ],
+      "keywords": [
+        "agentic",
+        "and",
+        "copilot",
+        "custom",
+        "features",
+        "for",
+        "getting-started",
+        "init",
+        "initialization",
+        "initialize",
+        "instructions",
+        "project",
+        "project-initialization-for-copilot",
+        "repository.",
+        "see",
+        "this"
+      ],
+      "syntax": "/init",
+      "category": "getting-started",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Initialize Copilot custom instructions and agentic features for this repository. See Project initialization for Copilot (#project-initialization-for-copilot).",
+      "official_aliases": [
+        "/init"
+      ],
+      "docs_url": "#project-initialization-for-copilot"
+    },
+    {
+      "id": "topic_2ee0327c39f2",
+      "slug": "command-update-7c39f2",
+      "type": "command",
+      "title": "/update",
+      "displayText": "/update",
+      "synopsis": "Use /update to update Copilot CLI to the latest version.",
+      "details": "Syntax: /update, /upgrade Update the CLI to the latest version.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "getting-started",
+      "chapter": "getting-started",
+      "examples": [
+        "/update  # update from inside a session",
+        "/upgrade  # alias for /update"
+      ],
+      "keywords": [
+        "cli",
+        "getting-started",
+        "latest",
+        "the",
+        "update",
+        "upgrade",
+        "version."
+      ],
+      "syntax": "/update, /upgrade",
+      "category": "getting-started",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Update the CLI to the latest version.",
+      "official_aliases": [
+        "/update",
+        "/upgrade"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_46822cd033f7",
+      "slug": "command-usage-d033f7",
+      "type": "command",
+      "title": "/usage",
+      "displayText": "/usage",
+      "synopsis": "Use /usage to display session usage metrics and statistics.",
+      "details": "Display session usage metrics and statistics.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "getting-started",
+      "chapter": "getting-started",
+      "examples": [
+        "/usage  # show full stats for the current session"
+      ],
+      "keywords": [
+        "and",
+        "display",
+        "getting-started",
+        "metrics",
+        "session",
+        "statistics.",
+        "usage"
+      ],
+      "syntax": "/usage",
+      "category": "getting-started",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Display session usage metrics and statistics.",
+      "official_aliases": [
+        "/usage"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_50c84ff608c7",
+      "slug": "command-version-f608c7",
+      "type": "command",
+      "title": "/version",
+      "displayText": "/version",
+      "synopsis": "Use /version to display version information and check for updates.",
+      "details": "Display version information and check for updates.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "getting-started",
+      "chapter": "getting-started",
+      "examples": [
+        "/version  # print installed version",
+        "/update  # update if an upgrade is available"
+      ],
+      "keywords": [
+        "and",
+        "check",
+        "display",
+        "for",
+        "getting-started",
+        "information",
+        "updates.",
+        "version"
+      ],
+      "syntax": "/version",
+      "category": "getting-started",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Display version information and check for updates.",
+      "official_aliases": [
+        "/version"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_e7fc83824783",
+      "slug": "command-instructions-824783",
+      "type": "command",
+      "title": "/instructions",
+      "displayText": "/instructions",
+      "synopsis": "Use /instructions to view and toggle custom instruction files.",
+      "details": "View and toggle custom instruction files.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "instructions",
+      "chapter": "instructions",
+      "examples": [
+        "/instructions  # show loaded instruction files and their status"
+      ],
+      "keywords": [
+        "and",
+        "custom",
+        "files.",
+        "instruction",
+        "instructions",
+        "toggle",
+        "view"
+      ],
+      "syntax": "/instructions",
+      "category": "instructions",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "View and toggle custom instruction files.",
+      "official_aliases": [
+        "/instructions"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_fc896bcb014c",
+      "slug": "command-plugin-cb014c",
+      "type": "command",
+      "title": "/plugin",
+      "displayText": "/plugin",
+      "synopsis": "Use /plugin to manage plugins and plugin marketplaces.",
+      "details": "Syntax: /plugin [marketplace|install|uninstall|update|list] [ARGS...] Manage plugins and plugin marketplaces.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "instructions",
+      "chapter": "instructions",
+      "examples": [
+        "/plugin list  # show all installed plugins",
+        "/plugin marketplace  # browse available plugins",
+        "/plugin install my-org/my-plugin  # install a plugin",
+        "/plugin update  # update all installed plugins"
+      ],
+      "keywords": [
+        "and",
+        "args...",
+        "install",
+        "instructions",
+        "list",
+        "manage",
+        "marketplace",
+        "marketplaces.",
+        "plugin",
+        "plugins",
+        "uninstall",
+        "update"
+      ],
+      "syntax": "/plugin [marketplace|install|uninstall|update|list] [ARGS...]",
+      "category": "instructions",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Manage plugins and plugin marketplaces.",
+      "official_aliases": [
+        "/plugin"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-cli-plugins"
+    },
+    {
+      "id": "topic_1a11ba4c332b",
+      "slug": "command-skills-4c332b",
+      "type": "command",
+      "title": "/skills",
+      "displayText": "/skills",
+      "synopsis": "Use /skills to manage skills for enhanced capabilities.",
+      "details": "Syntax: /skills [list|info|add|remove|reload] [ARGS...] Manage skills for enhanced capabilities.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "instructions",
+      "chapter": "instructions",
+      "examples": [
+        "/skills list  # show all loaded skills and their sources",
+        "/skills info my-skill  # show details about a specific skill",
+        "/skills reload  # reload skills after adding or editing files"
+      ],
+      "keywords": [
+        "add",
+        "args...",
+        "capabilities.",
+        "enhanced",
+        "for",
+        "info",
+        "instructions",
+        "list",
+        "manage",
+        "reload",
+        "remove",
+        "skills"
+      ],
+      "syntax": "/skills [list|info|add|remove|reload] [ARGS...]",
+      "category": "instructions",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Manage skills for enhanced capabilities.",
+      "official_aliases": [
+        "/skills"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/create-skills"
+    },
+    {
+      "id": "topic_07719747b9d5",
+      "slug": "command-lsp-47b9d5",
+      "type": "command",
+      "title": "/lsp",
+      "displayText": "/lsp",
+      "synopsis": "Use /lsp to manage the language server configuration.",
+      "details": "Syntax: /lsp [show|test|reload|help] [SERVER-NAME] Manage the language server configuration.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "mcp",
+      "chapter": "mcp",
+      "examples": [
+        "/lsp show  # list all configured language servers",
+        "/lsp test typescript  # test the TypeScript language server connection",
+        "/lsp reload  # reload LSP configs after making changes"
+      ],
+      "keywords": [
+        "configuration.",
+        "help",
+        "language",
+        "lsp",
+        "manage",
+        "mcp",
+        "reload",
+        "server",
+        "server-name",
+        "show",
+        "test",
+        "the"
+      ],
+      "syntax": "/lsp [show|test|reload|help] [SERVER-NAME]",
+      "category": "mcp",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Manage the language server configuration.",
+      "official_aliases": [
+        "/lsp"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_1239ebd8848f",
+      "slug": "command-mcp-d8848f",
+      "type": "command",
+      "title": "/mcp",
+      "displayText": "/mcp",
+      "synopsis": "Use /mcp to manage the MCP server configuration.",
+      "details": "Syntax: /mcp [show|add|edit|delete|disable|enable|auth|reload] [SERVER-NAME] Manage the MCP server configuration.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "mcp",
+      "chapter": "mcp",
+      "examples": [
+        "/mcp show  # list all configured MCP servers and their status",
+        "/mcp disable my-server  # temporarily disable a server without removing it",
+        "/mcp reload  # reload all MCP server configs without restarting",
+        "/mcp auth my-server  # trigger a fresh OAuth flow for a remote server"
+      ],
+      "keywords": [
+        "add",
+        "auth",
+        "configuration.",
+        "delete",
+        "disable",
+        "edit",
+        "enable",
+        "manage",
+        "mcp",
+        "reload",
+        "server",
+        "server-name",
+        "show",
+        "the"
+      ],
+      "syntax": "/mcp [show|add|edit|delete|disable|enable|auth|reload] [SERVER-NAME]",
+      "category": "mcp",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Manage the MCP server configuration.",
+      "official_aliases": [
+        "/mcp"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-mcp-servers#managing-mcp-servers"
+    },
+    {
+      "id": "topic_e03472f90ddd",
+      "slug": "command-compact-f90ddd",
+      "type": "command",
+      "title": "/compact",
+      "displayText": "/compact",
+      "synopsis": "Use /compact to summarize the conversation history to reduce context window usage.",
+      "details": "Summarize the conversation history to reduce context window usage.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "memory",
+      "chapter": "memory",
+      "examples": [
+        "/context  # check token usage before compacting",
+        "/compact  # summarize history and free up context window space"
+      ],
+      "keywords": [
+        "compact",
+        "context",
+        "conversation",
+        "history",
+        "memory",
+        "reduce",
+        "summarize",
+        "the",
+        "usage.",
+        "window"
+      ],
+      "syntax": "/compact",
+      "category": "memory",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Summarize the conversation history to reduce context window usage.",
+      "official_aliases": [
+        "/compact"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/context-management#compaction"
+    },
+    {
+      "id": "topic_c38a08f2d9ba",
+      "slug": "command-context-f2d9ba",
+      "type": "command",
+      "title": "/context",
+      "displayText": "/context",
+      "synopsis": "Use /context to show the context window token usage and visualization.",
+      "details": "Show the context window token usage and visualization.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "memory",
+      "chapter": "memory",
+      "examples": [
+        "/context  # show token usage and remaining capacity",
+        "/compact  # run this if context is nearly full"
+      ],
+      "keywords": [
+        "and",
+        "context",
+        "memory",
+        "show",
+        "the",
+        "token",
+        "usage",
+        "visualization.",
+        "window"
+      ],
+      "syntax": "/context",
+      "category": "memory",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Show the context window token usage and visualization.",
+      "official_aliases": [
+        "/context"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/context-management#checking-your-context-usage"
+    },
+    {
+      "id": "topic_82e3c06ed0d5",
+      "slug": "command-rename-6ed0d5",
+      "type": "command",
+      "title": "/rename",
+      "displayText": "/rename",
+      "synopsis": "Use /rename to rename the current session (auto-generates a name if omitted; alias for /session rename).",
+      "details": "Syntax: /rename [NAME] Rename the current session (auto-generates a name if omitted; alias for /session rename).",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "memory",
+      "chapter": "memory",
+      "examples": [
+        "/rename  # auto-generate a descriptive session name",
+        "/rename payment-refactor-may  # give it a specific name"
+      ],
+      "keywords": [
+        "alias",
+        "auto-generates",
+        "current",
+        "for",
+        "memory",
+        "name",
+        "omitted",
+        "rename",
+        "session",
+        "the"
+      ],
+      "syntax": "/rename [NAME]",
+      "category": "memory",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Rename the current session (auto-generates a name if omitted; alias for /session rename).",
+      "official_aliases": [
+        "/rename"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_a205ed46300e",
+      "slug": "command-resume-46300e",
+      "type": "command",
+      "title": "/resume",
+      "displayText": "/resume",
+      "synopsis": "Use /resume to switch to a different session by choosing from a list (optionally specify a session ID).",
+      "details": "Syntax: /resume [SESSION-ID], /continue [SESSION-ID] Switch to a different session by choosing from a list (optionally specify a session ID).",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "memory",
+      "chapter": "memory",
+      "examples": [
+        "/resume  # open the interactive session picker",
+        "/continue  # alias for /resume",
+        "/resume my-auth-refactor  # resume a session by name"
+      ],
+      "keywords": [
+        "choosing",
+        "continue",
+        "different",
+        "from",
+        "list",
+        "memory",
+        "optionally",
+        "resume",
+        "session",
+        "session-id",
+        "specify",
+        "switch"
+      ],
+      "syntax": "/resume [SESSION-ID], /continue [SESSION-ID]",
+      "category": "memory",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Switch to a different session by choosing from a list (optionally specify a session ID).",
+      "official_aliases": [
+        "/resume",
+        "/continue"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_dfa5b1ca38d3",
+      "slug": "command-session-ca38d3",
+      "type": "command",
+      "title": "/session",
+      "displayText": "/session",
+      "synopsis": "Use /session to show session information and manage sessions. Subcommands: info, checkpoints, files, plan, rename, cleanup, prune, delete, delete-all.",
+      "details": "Syntax: /session [info|checkpoints [n]|files|plan|rename [NAME]|cleanup|prune|delete [ID]|delete-all], /sessions [info|checkpoints [n]|files|plan|rename [NAME]|cleanup|prune|delete [ID]|delete-all] Show session information and manage sessions. Subcommands: info, checkpoints, files, plan, rename, cleanup, prune, delete, delete-all.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "memory",
+      "chapter": "memory",
+      "examples": [
+        "/session info  # show current session ID, age, and token usage",
+        "/session files  # list files modified in this session",
+        "/session rename my-auth-refactor  # give the session a descriptive name",
+        "/session cleanup  # remove old session data to free space"
+      ],
+      "keywords": [
+        "and",
+        "checkpoints",
+        "cleanup",
+        "delete",
+        "delete-all",
+        "delete-all.",
+        "files",
+        "info",
+        "information",
+        "manage",
+        "memory",
+        "name",
+        "plan",
+        "prune",
+        "rename",
+        "session",
+        "sessions",
+        "sessions."
+      ],
+      "syntax": "/session [info|checkpoints [n]|files|plan|rename [NAME]|cleanup|prune|delete [ID]|delete-all], /sessions [info|checkpoints [n]|files|plan|rename [NAME]|cleanup|prune|delete [ID]|delete-all]",
+      "category": "memory",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Show session information and manage sessions. Subcommands: info, checkpoints, files, plan, rename, cleanup, prune, delete, delete-all.",
+      "official_aliases": [
+        "/session",
+        "/sessions"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_c3a561073539",
+      "slug": "command-share-073539",
+      "type": "command",
+      "title": "/share",
+      "displayText": "/share",
+      "synopsis": "Use /share to share the session to a Markdown file, interactive HTML file, or GitHub gist.",
+      "details": "Syntax: /share [file|html|gist] [session|research] [PATH], /export [file|html|gist] [session|research] [PATH] Share the session to a Markdown file, interactive HTML file, or GitHub gist.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "memory",
+      "chapter": "memory",
+      "examples": [
+        "/share file  # save session as a Markdown file in the current directory",
+        "/share gist  # publish to a secret GitHub Gist",
+        "/share html session ./my-session.html  # save as interactive HTML",
+        "/export  # alias for /share"
+      ],
+      "keywords": [
+        "export",
+        "file",
+        "gist",
+        "gist.",
+        "github",
+        "html",
+        "interactive",
+        "markdown",
+        "memory",
+        "path",
+        "research",
+        "session",
+        "share",
+        "the"
+      ],
+      "syntax": "/share [file|html|gist] [session|research] [PATH], /export [file|html|gist] [session|research] [PATH]",
+      "category": "memory",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Share the session to a Markdown file, interactive HTML file, or GitHub gist.",
+      "official_aliases": [
+        "/share",
+        "/export"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_327dce15594a",
+      "slug": "command-experimental-15594a",
+      "type": "command",
+      "title": "/experimental",
+      "displayText": "/experimental",
+      "synopsis": "Use /experimental for toggle, set, or show experimental features.",
+      "details": "Syntax: /experimental [on|off|show] Toggle, set, or show experimental features.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "models",
+      "chapter": "models",
+      "examples": [
+        "/experimental show  # list which experimental features are active",
+        "/experimental on  # enable all experimental features",
+        "/experimental off  # disable experimental features"
+      ],
+      "keywords": [
+        "experimental",
+        "features.",
+        "models",
+        "off",
+        "set",
+        "show",
+        "toggle"
+      ],
+      "syntax": "/experimental [on|off|show]",
+      "category": "models",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Toggle, set, or show experimental features.",
+      "official_aliases": [
+        "/experimental"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_1629d403f72d",
+      "slug": "command-model-03f72d",
+      "type": "command",
+      "title": "/model",
+      "displayText": "/model",
+      "synopsis": "Use /model to select the AI model you want to use.",
+      "details": "Syntax: /model, /models [MODEL] Select the AI model you want to use.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "models",
+      "chapter": "models",
+      "examples": [
+        "/model  # open interactive model picker",
+        "/models  # alias for /model",
+        "/model claude-sonnet-4-5  # switch to a specific model by name"
+      ],
+      "keywords": [
+        "model",
+        "models",
+        "select",
+        "the",
+        "use.",
+        "want",
+        "you"
+      ],
+      "syntax": "/model, /models [MODEL]",
+      "category": "models",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Select the AI model you want to use.",
+      "official_aliases": [
+        "/model",
+        "/models"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_0d08aae74ecf",
+      "slug": "command-theme-e74ecf",
+      "type": "command",
+      "title": "/theme",
+      "displayText": "/theme",
+      "synopsis": "Use /theme to view or set the color mode.",
+      "details": "Syntax: /theme [default|dim|high-contrast|colorblind] View or set the color mode.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "models",
+      "chapter": "models",
+      "examples": [
+        "/theme  # show current theme",
+        "/theme dim  # switch to dimmed color scheme",
+        "/theme high-contrast  # maximum accessibility contrast"
+      ],
+      "keywords": [
+        "color",
+        "colorblind",
+        "default",
+        "dim",
+        "high-contrast",
+        "mode.",
+        "models",
+        "set",
+        "the",
+        "theme",
+        "view"
+      ],
+      "syntax": "/theme [default|dim|high-contrast|colorblind]",
+      "category": "models",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "View or set the color mode.",
+      "official_aliases": [
+        "/theme"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_702252c3aa55",
+      "slug": "command-clikit-c3aa55",
+      "type": "command",
+      "title": "/clikit",
+      "displayText": "/clikit",
+      "synopsis": "Use /clikit to preview CLI business components (for example, quota info).",
+      "details": "Use /clikit to preview CLI business components (for example, quota info). Syntax: /clikit [COMPONENT] Preview CLI business components (for example, quota info).",
+      "source_path": "https://raw.githubusercontent.com/github/docs/main/content/copilot/reference/copilot-cli-reference/cli-command-reference.md",
+      "source_heading": "Slash commands in the interactive interface",
+      "chapter": "official-docs",
+      "examples": [],
+      "keywords": [
+        "business",
+        "cli",
+        "clikit",
+        "component",
+        "components",
+        "example",
+        "for",
+        "info",
+        "official-docs",
+        "preview",
+        "quota"
+      ],
+      "syntax": "/clikit [COMPONENT]",
+      "category": "official-docs",
+      "note": "",
+      "source_kind": "official-docs",
+      "sources": [
+        "official-docs"
+      ],
+      "official_purpose": "Preview CLI business components (for example, quota info).",
+      "official_aliases": [
+        "/clikit"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_606e6644b3f6",
+      "slug": "command-downgrade-44b3f6",
+      "type": "command",
+      "title": "/downgrade",
+      "displayText": "/downgrade",
+      "synopsis": "Use /downgrade to download and restart into a specific CLI version. Available for team accounts.",
+      "details": "Use /downgrade to download and restart into a specific CLI version. Available for team accounts. Syntax: /downgrade <VERSION> Download and restart into a specific CLI version. Available for team accounts.",
+      "source_path": "https://raw.githubusercontent.com/github/docs/main/content/copilot/reference/copilot-cli-reference/cli-command-reference.md",
+      "source_heading": "Slash commands in the interactive interface",
+      "chapter": "official-docs",
+      "examples": [],
+      "keywords": [
+        "accounts.",
+        "and",
+        "available",
+        "cli",
+        "downgrade",
+        "download",
+        "for",
+        "into",
+        "official-docs",
+        "restart",
+        "specific",
+        "team",
+        "version",
+        "version."
+      ],
+      "syntax": "/downgrade <VERSION>",
+      "category": "official-docs",
+      "note": "",
+      "source_kind": "official-docs",
+      "sources": [
+        "official-docs"
+      ],
+      "official_purpose": "Download and restart into a specific CLI version. Available for team accounts.",
+      "official_aliases": [
+        "/downgrade"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_47460af2d21f",
+      "slug": "command-collect-debug-logs-f2d21f",
+      "type": "command",
+      "title": "/collect-debug-logs",
+      "displayText": "/collect-debug-logs",
+      "synopsis": "Use /collect-debug-logs when you need the collect debug logs command from the troubleshooting area of Copilot CLI.",
+      "details": "",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "troubleshooting",
+      "chapter": "troubleshooting",
+      "examples": [
+        "/collect-debug-logs  # save debug logs for the current session",
+        "/feedback  # then attach the log file when filing a bug"
+      ],
+      "keywords": [
+        "collect-debug-logs",
+        "troubleshooting"
+      ],
+      "syntax": "/collect-debug-logs",
+      "category": "troubleshooting",
+      "note": "",
+      "source_kind": "cheatsheet",
+      "sources": [
+        "cheatsheet"
+      ],
+      "official_purpose": "",
+      "official_aliases": [],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_42e48f3557d7",
+      "slug": "command-diagnosis-3557d7",
+      "type": "command",
+      "title": "/diagnosis",
+      "displayText": "/diagnosis",
+      "synopsis": "Use /diagnosis when you need the diagnosis command from the troubleshooting area of Copilot CLI.",
+      "details": "",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "troubleshooting",
+      "chapter": "troubleshooting",
+      "examples": [
+        "/diagnosis  # run all diagnostic checks",
+        "/restart  # try this first if /diagnosis reports issues"
+      ],
+      "keywords": [
+        "diagnosis",
+        "troubleshooting"
+      ],
+      "syntax": "/diagnosis",
+      "category": "troubleshooting",
+      "note": "",
+      "source_kind": "cheatsheet",
+      "sources": [
+        "cheatsheet"
+      ],
+      "official_purpose": "",
+      "official_aliases": [],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_97ba42b6219d",
+      "slug": "command-exit-b6219d",
+      "type": "command",
+      "title": "/exit",
+      "displayText": "/exit",
+      "synopsis": "Use /exit to exit Copilot CLI.",
+      "details": "Syntax: /exit, /quit Exit the CLI.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "troubleshooting",
+      "chapter": "troubleshooting",
+      "examples": [
+        "/exit  # close the interactive session"
+      ],
+      "keywords": [
+        "cli.",
+        "exit",
+        "quit",
+        "the",
+        "troubleshooting"
+      ],
+      "syntax": "/exit, /quit",
+      "category": "troubleshooting",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Exit the CLI.",
+      "official_aliases": [
+        "/exit",
+        "/quit"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_6a06faac6533",
+      "slug": "command-quit-ac6533",
+      "type": "command",
+      "title": "/quit",
+      "displayText": "/quit",
+      "synopsis": "Use /quit to exit Copilot CLI.",
+      "details": "Syntax: /exit, /quit Exit the CLI.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "troubleshooting",
+      "chapter": "troubleshooting",
+      "examples": [
+        "/quit  # close the interactive session"
+      ],
+      "keywords": [
+        "cli.",
+        "exit",
+        "quit",
+        "the",
+        "troubleshooting"
+      ],
+      "syntax": "/exit, /quit",
+      "category": "troubleshooting",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Exit the CLI.",
+      "official_aliases": [
+        "/exit",
+        "/quit"
+      ],
+      "docs_url": ""
+    },
+    {
+      "id": "topic_86de7d02768d",
+      "slug": "command-remote-02768d",
+      "type": "command",
+      "title": "/remote",
+      "displayText": "/remote",
+      "synopsis": "Use /remote to show the remote control status (if no argument provided), enable remote steering (on), or end the remote connection (off).",
+      "details": "Syntax: /remote [on|off] Show the remote control status (if no argument provided), enable remote steering (on), or end the remote connection (off).",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "troubleshooting",
+      "chapter": "troubleshooting",
+      "examples": [
+        "/remote  # show current remote control status",
+        "/remote on  # enable remote steering from another device",
+        "/remote off  # end the remote connection"
+      ],
+      "keywords": [
+        "argument",
+        "connection",
+        "control",
+        "enable",
+        "end",
+        "off",
+        "provided",
+        "remote",
+        "show",
+        "status",
+        "steering",
+        "the",
+        "troubleshooting"
+      ],
+      "syntax": "/remote [on|off]",
+      "category": "troubleshooting",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Show the remote control status (if no argument provided), enable remote steering (on), or end the remote connection (off).",
+      "official_aliases": [
+        "/remote"
+      ],
+      "docs_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/steer-remotely"
+    },
+    {
+      "id": "topic_521ccb916ff6",
+      "slug": "command-restart-916ff6",
+      "type": "command",
+      "title": "/restart",
+      "displayText": "/restart",
+      "synopsis": "Use /restart for restart Copilot CLI, preserving the current session.",
+      "details": "Restart the CLI, preserving the current session.",
+      "source_path": "https://prasadhonrao.github.io/ghcp-cli-cheatsheet/assets/index-Bhc2a8Wi.js",
+      "source_heading": "troubleshooting",
+      "chapter": "troubleshooting",
+      "examples": [
+        "/restart  # restart the CLI, preserving the current session"
+      ],
+      "keywords": [
+        "cli",
+        "current",
+        "preserving",
+        "restart",
+        "session.",
+        "the",
+        "troubleshooting"
+      ],
+      "syntax": "/restart",
+      "category": "troubleshooting",
+      "note": "",
+      "source_kind": "cheatsheet+official-docs",
+      "sources": [
+        "cheatsheet",
+        "official-docs"
+      ],
+      "official_purpose": "Restart the CLI, preserving the current session.",
+      "official_aliases": [
+        "/restart"
+      ],
+      "docs_url": ""
+    }
+  ]
+}
