@@ -54,6 +54,22 @@ describe('smooth reel motion timeline', () => {
     ]);
   });
 
+  it('can start from the previous settled index and still move upward into the next landing item', () => {
+    const segments = buildSmoothSpinTimeline({
+      itemCount: 12,
+      itemHeight: 96,
+      centerOffset: 96,
+      startIndex: 4,
+      landingIndex: 9,
+    });
+
+    expect(segments[0]).toMatchObject({ index: 4, offset: 96 - 4 * 96 });
+    expect(segments.at(-1)).toMatchObject({ index: 9, offset: 96 - 9 * 96 });
+    for (let index = 1; index < segments.length - 2; index += 1) {
+      expect(segments[index].offset).toBeLessThanOrEqual(segments[index - 1].offset);
+    }
+  });
+
   it('can settle on early, middle, or late positions in the reel', () => {
     const early = buildSmoothSpinTimeline({ itemCount: 21, itemHeight: 96, centerOffset: 96, landingIndex: 3 });
     const middle = buildSmoothSpinTimeline({ itemCount: 21, itemHeight: 96, centerOffset: 96, landingIndex: 10 });

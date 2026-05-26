@@ -1,6 +1,6 @@
 import React, { FormEvent, useEffect, useMemo, useRef, useState } from 'react';
 import { Wand2, RefreshCw } from 'lucide-react';
-import { buildRandomizedSpinSequence, chooseTopic, sortTopicsForDisplay, topicTypeLabel, type Topic } from './topicPicker';
+import { buildUpwardSpinSequence, chooseTopic, sortTopicsForDisplay, topicTypeLabel, type Topic } from './topicPicker';
 import { buildSmoothSpinTimeline } from './reelMotion';
 import './styles.css';
 
@@ -131,7 +131,8 @@ function App() {
     }
 
     const finalTopic = chooseTopic(topics, forced || getForcedTopicFromUrl());
-    const { sequence, landingIndex } = buildRandomizedSpinSequence(topics, finalTopic, { cycles: 5 });
+    const previousTopic = selected ?? current;
+    const { sequence, landingIndex, startIndex } = buildUpwardSpinSequence(topics, finalTopic, { previousTopic, cycles: 5 });
     setIsSpinning(true);
     setIsBrowsing(false);
     setIsDetailsRevealed(false);
@@ -140,14 +141,15 @@ function App() {
       itemCount: sequence.length,
       itemHeight: REEL_ITEM_HEIGHT,
       centerOffset: REEL_CENTER_OFFSET,
+      startIndex,
       landingIndex,
     });
     const startSegment = timeline[0];
-    const startIndex = startSegment?.index ?? 0;
+    const startIndexFromTimeline = startSegment?.index ?? startIndex;
 
     setReelSequence(sequence);
-    setReelIndex(startIndex);
-    setCurrent(sequence[startIndex] ?? sequence[0]);
+    setReelIndex(startIndexFromTimeline);
+    setCurrent(sequence[startIndexFromTimeline] ?? sequence[0]);
     setReelTransition('none');
     setReelOffset(startSegment?.offset ?? REEL_CENTER_OFFSET);
 

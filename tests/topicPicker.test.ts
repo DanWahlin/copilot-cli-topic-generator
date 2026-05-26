@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { chooseTopic, buildRandomizedSpinSequence, buildSpinSequence, sortTopicsForDisplay, topicTypeLabel, type Topic } from '../src/topicPicker';
+import { chooseTopic, buildRandomizedSpinSequence, buildSpinSequence, buildUpwardSpinSequence, sortTopicsForDisplay, topicTypeLabel, type Topic } from '../src/topicPicker';
 
 const topics: Topic[] = [
   { id: '1', slug: 'help', type: 'command', title: '/help', displayText: '/help', synopsis: 'Shows help.', details: 'Lists commands and usage.', category: 'getting-started' },
@@ -90,6 +90,19 @@ describe('topic picker', () => {
     });
 
     expect(sequence[landingIndex - 1].displayText).not.toBe(sequence[landingIndex + 1].displayText);
+  });
+
+  it('builds upward spin sequences from the previous settled command to a rerandomized landing command', () => {
+    const first = buildUpwardSpinSequence(topics, topics[1], { previousTopic: topics[0], cycles: 2, random: () => 0.10 });
+    const second = buildUpwardSpinSequence(topics, topics[1], { previousTopic: topics[1], cycles: 2, random: () => 0.70 });
+
+    expect(first.startIndex).toBe(0);
+    expect(first.sequence[first.startIndex]).toBe(topics[0]);
+    expect(first.sequence[first.landingIndex]).toBe(topics[1]);
+    expect(first.landingIndex).toBeGreaterThan(first.startIndex);
+    expect(second.sequence[second.startIndex]).toBe(topics[1]);
+    expect(second.sequence[second.landingIndex]).toBe(topics[1]);
+    expect(second.sequence.slice(1, -1).map((topic) => topic.displayText)).not.toEqual(first.sequence.slice(1, -1).map((topic) => topic.displayText));
   });
 
   it('labels cheatsheet items as commands', () => {

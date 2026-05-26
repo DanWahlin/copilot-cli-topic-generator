@@ -23,7 +23,7 @@ export type Topic = {
   docs_url?: string;
 };
 
-type SpinOptions = {
+export type SpinOptions = {
   cycles?: number;
   random?: () => number;
   landingPosition?: 'start' | 'middle' | 'end';
@@ -170,6 +170,29 @@ export function buildRandomizedSpinSequence(topics: Topic[], finalTopic: Topic, 
   sequence[landingIndex] = finalTopic;
 
   return { sequence: smoothVisibleWindowDuplicates(sequence, landingIndex, topics, random), landingIndex };
+}
+
+export type UpwardSpinSequenceOptions = SpinOptions & {
+  previousTopic?: Topic | null;
+};
+
+export type UpwardSpinSequenceResult = SpinSequenceResult & {
+  startIndex: number;
+};
+
+export function buildUpwardSpinSequence(topics: Topic[], finalTopic: Topic, options: UpwardSpinSequenceOptions = {}): UpwardSpinSequenceResult {
+  const { previousTopic, ...spinOptions } = options;
+  const { sequence, landingIndex } = buildRandomizedSpinSequence(topics, finalTopic, {
+    ...spinOptions,
+    landingPosition: 'end',
+  });
+  const withPreviousStart = previousTopic ? [previousTopic, ...sequence] : sequence;
+
+  return {
+    sequence: withPreviousStart,
+    startIndex: 0,
+    landingIndex: previousTopic ? landingIndex + 1 : landingIndex,
+  };
 }
 
 export function topicTypeLabel(type: string): string {
